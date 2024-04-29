@@ -3,10 +3,16 @@ function setup() {
   createCanvas(400, 400, WEBGL);
   describe('a rotating spinning top');
 }
+ 
+let canvas=
+  createCanvas(400, 400);
+
+   canvas.parent('sketch2');
+
 
 function draw() {
   
-  background(255);
+  background(400);
   fill(165, 132, 87);
   
   rotateX(frameCount * 0.01);
